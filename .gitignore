@@ -1,1 +1,6 @@
-Adnan*.iml.idea/*.classout/target/
+Adnan
+*.iml
+.idea/
+*.class
+out/
+target/
