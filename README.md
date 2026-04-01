@@ -1,6 +1,6 @@
 # 🚀 DSA — Data Structures & Algorithms  
 
-A comprehensive collection of **Data Structure** and **Algorithm** implementations, organized by topic — built and maintained by **[@yamiSukehiro2907](https://github.com/yamiSukehiro2907)**.  
+A comprehensive collection of **Data Structure** and **Algorithm** implementations, organized by topic — built and maintained by **[@vimalyad](https://github.com/vimalyad)**.  
 This repository is aimed at helping learners and developers strengthen their DSA concepts through clean, practical examples and interview-style problems.
 
 ---
