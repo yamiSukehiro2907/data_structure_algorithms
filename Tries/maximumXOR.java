@@ -1,4 +1,4 @@
-
+package Tries;
 public class maximumXOR {
 
     public static void main(String[] args) {

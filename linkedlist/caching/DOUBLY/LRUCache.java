@@ -1,4 +1,4 @@
-package Lecture.DOUBLY;
+package linkedlist.caching.DOUBLY;
 
 import java.util.*;
 

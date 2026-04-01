@@ -1,4 +1,4 @@
-package Lecture.SINGLY;
+package linkedlist.caching.SINGLY;
 
 public class Main {
     public static void main(String[] args) {

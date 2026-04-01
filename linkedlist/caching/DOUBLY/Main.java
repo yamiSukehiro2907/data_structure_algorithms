@@ -1,4 +1,4 @@
-package Lecture.DOUBLY;
+package linkedlist.caching.DOUBLY;
 
 public class Main {
     public static void main(String[] args) {

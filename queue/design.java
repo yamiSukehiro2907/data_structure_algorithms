@@ -1,14 +1,4 @@
-package L26_Queue;
-
-class Node {
-    Node next;
-    int val;
-
-    Node(int val) {
-        this.next = null;
-        this.val = val;
-    }
-}
+package queue;
 
 public class design {
     // Queue works on the principle of FIFO first in first out
@@ -54,7 +44,16 @@ public class design {
             }
             System.out.println("Null");
         }
+    }
 
+    static class Node {
+        Node next;
+        int val;
+
+        Node(int val) {
+            this.next = null;
+            this.val = val;
+        }
     }
 
     public static void main(String[] args) {

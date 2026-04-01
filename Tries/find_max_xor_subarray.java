@@ -1,4 +1,4 @@
-
+package Tries;
 public class find_max_xor_subarray {
 
     public static void main(String[] args) {

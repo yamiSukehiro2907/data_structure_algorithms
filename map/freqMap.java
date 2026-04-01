@@ -29,4 +29,49 @@ public class freqMap {
         }
     }
 
+    public static class length_of_longest_subarray_with_sum_zero {
+        public static void main(String[] args) {
+            int arr[] = {};
+            System.out.println(solve(arr));
+        }
+
+        private static int solve(int[] arr) {
+            int ans = 0;
+            HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
+            int prefix[] = new int[arr.length + 1];
+            for(int i = 1 ; i <= arr.length ; i++){
+                prefix[i] = prefix[i - 1] + arr[i - 1];
+            }
+            for(int i = 1 ; i <= arr.length ; i++){
+                if(!map.containsKey(prefix[i])){
+                    map.put(prefix[i], new ArrayList<>());
+                }
+                map.get(prefix[i]).add(i);
+            }
+            return ans - 1;
+        }
+    }
+
+    public static class subarray_with_sum_divisible_by_k {
+        public static void main(String[] args) {
+            int arr[] = {};
+            int k = 1;
+            System.out.println(solve(arr, k));
+        }
+
+        private static int solve(int[] arr, int k) {
+            int prefix[] = new int[arr.length + 1];
+            for (int i = 1; i <= arr.length; i++) {
+                prefix[i] = prefix[i - 1] + arr[i - 1];
+                prefix[i] = prefix[i] % k;
+            }
+            int ans = 0;
+            HashMap<Integer, Integer> map = new HashMap<>();
+            for (int i = 1; i <= arr.length; i++) {
+                map.put(prefix[i], map.getOrDefault(prefix[i], 0) + 1);
+                ans = Math.max(ans, map.get(prefix[i]));
+            }
+            return ans - 1;
+        }
+    }
 }

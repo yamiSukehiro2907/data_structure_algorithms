@@ -1,4 +1,4 @@
-package L26_Queue;
+package queue;
 
 import java.util.*;
 

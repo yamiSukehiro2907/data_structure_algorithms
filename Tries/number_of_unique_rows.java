@@ -1,4 +1,4 @@
-
+package Tries;
 public class number_of_unique_rows {
 
     private static int uniqueCount = 0;

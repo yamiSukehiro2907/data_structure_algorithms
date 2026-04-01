@@ -44,8 +44,8 @@ import java.util.*;
 public class LRUCache {
     private int capacity;
     private int size;
-    private Node head, tail;
-    private Map<String, Node> map;
+    private linkedlist.Node head, tail;
+    private Map<String, linkedlist.Node> map;
 
     LRUCache(int capacity) {
         this.capacity = capacity;
@@ -59,7 +59,7 @@ public class LRUCache {
         if (!map.containsKey(data)) {
             throw new RuntimeException("Data not found: " + data);
         }
-        Node node = map.get(data);
+        linkedlist.Node node = map.get(data);
         if (node != head) {
             remove(node);
             addAtHead(node);
@@ -69,11 +69,11 @@ public class LRUCache {
 
     public void put(String data) {
         if (map.containsKey(data)) {
-            Node node = map.get(data);
+            linkedlist.Node node = map.get(data);
             remove(node);
             addAtHead(node);
         } else {
-            Node node = new Node(data);
+            linkedlist.Node node = new linkedlist.Node(data);
             if (size == capacity) {
                 map.remove(tail.data);
                 remove(tail);
@@ -82,7 +82,7 @@ public class LRUCache {
         }
     }
 
-    private void addAtHead(Node node) {
+    private void addAtHead(linkedlist.Node node) {
         node.prev = null;
         node.next = head;
         if (head != null) {
@@ -96,7 +96,7 @@ public class LRUCache {
         size++;
     }
 
-    private void remove(Node node) {
+    private void remove(linkedlist.Node node) {
         if (node.prev != null) {
             node.prev.next = node.next;
         } else {
@@ -111,7 +111,7 @@ public class LRUCache {
     }
 
     public void print() {
-        Node node = head;
+        linkedlist.Node node = head;
         while (node != null) {
             System.out.print(node.data);
             if (node.next != null) {

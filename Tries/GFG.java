@@ -1,4 +1,4 @@
-
+package Tries;
 import java.util.Arrays;
 
 public class GFG {
